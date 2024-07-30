@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+
+  background: url(../img/fondo3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  color: #5faeae;
+  text-align: center;
+}
+
+h1+p {
+  font-size: 1.5em;
+}
+
+.card i {
+  color: #639119;
+}
+
+#linkedin {
+  color: #0a66c2;
+}
+
+
+#myimg {
+  border-radius: 50%;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  min-width: 100vw;
+}
+
+p a {
+  color: red;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.card {
+  position: relative;
+  width: 150px;
+  height: 250px;
+  margin: 2em;
+  background: url(../img/fondo3.jpg);
+  border-radius: 10px;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(247, 231, 89);
+}
+
+#html {
+  color: #e34c26;
+}
+
+#css {
+  color: #264de4;
+}
+
+#js {
+  color: #f0db4f;
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 30px;
+  color: #000000;
+  background: #5faeae;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: gray;
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .back a {
+  text-decoration: none;
+  color: #000;
+}
+
+.card .back a:hover {
+  transform: scale(1.2);
+}
+
+.card .back p {
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.card .back figure img {
+  width: 70%;
+}
+
+.card .back ul li {
+  font-size: 12px;
+  text-align: left;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+  transform: scale(1.6);
+  z-index: 10;
+}

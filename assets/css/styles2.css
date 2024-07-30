@@ -1,0 +1,31 @@
+h1{
+  text-align: center;
+  margin: 1em;
+  color: #5faeae;
+  
+}
+
+body{
+  background: url(../img/fondo3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  background-color: rgb(247, 231, 89);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+button{
+  background-color: #639119;
+  color: #000;
+  border-radius: 5px;
+  border: none;
+}
+p{
+  color: red;
+  font-size: 15px;
+}
+
